@@ -1,10 +1,12 @@
 <?php
 
+session_start();
+
 $conn =  mysqli_connect(
     'localhost',
     'root',
     '',
-    'users_projects'
+    'db_test_johan'
 );
 
 ?>

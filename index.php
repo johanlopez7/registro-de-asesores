@@ -1,42 +1,31 @@
-<?php include("conexion/db.php") ?>
+<?php include("Vista/header.php")?>
 
-<?php include("vista/header.php")?>
+<div class="d-flex justify-content-center align-content-center w-100 h-100">
 
-<div class="container p-4">
+    
+            <form action="Controlador/login.php" method="POST">
+                <div class="card card-body">
 
-    <div class="row">
-     
-        <div class="col-md-4">
-
-            <div class="card card-body">
-                <form action="modelo/login.php" method="POST">
                     <div class="form-group">
                         <input type="text" name="user" class="form-control"
-                        placeholder="user" autofocus>               
+                        placeholder="Ingresa tu usuario" autofocus autocomplete="off">              
                     </div>
-                </form>
-            </div>
-        <div class="card card-body">
-                <form.action="">
+                
+                    <br>
+                    
                     <div class="form-group">
                         <input type="password" name="password" class="form-control"
-                        placeholder="password" autofocus>               
+                        placeholder="Ingresa tu contraseña" autofocus autocomplete="off">               
                     </div>     
-                    <br>           
-                    <input type="submit" class="btn btn-success btn-block"
-                    name="login" value="login"> 
-                    </br>                   
-                </form>
-            </div>
 
-
-        </div>
-
-        <div class="col-md-8">
+                    <br>  
+                                
+                    <button type="submit" class="btn btn-success" name="login"> Ingresar </button>
+                    
+                </div>
+            </form>
         
-        </div>
-    </div>
     
 </div>
 
-<?php include("vista/footer.php")?>
+<?php include("Vista/footer.php")?>
